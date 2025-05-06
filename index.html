@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E-commerce Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">ShopEase</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#heading">Deals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero-section text-center text-white d-flex align-items-center justify-content-center"
+    >
+      <div class="container">
+        <h1 class="display-4 fw-bold">
+          Discover Amazing Deals for Every Season
+        </h1>
+        <p class="lead mb-4">
+          Shop the latest trends and best prices all in one place.
+        </p>
+        <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
+      </div>
+    </section>
+
+    <!-- Carousel -->
+    <section class="my-5 container">
+      <div
+        id="promoCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        aria-label="Promotional carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#promoCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#promoCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#promoCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner rounded">
+          <div class="carousel-item item-image1 active">
+            <!-- <img
+              src="https://graphicgoogle.com/wp-content/uploads/2024/07/Free-Summer-Sale-Banner-PSD-Template.jpg"
+              class="d-block w-100"
+              alt="Summer Sale"
+            /> -->
+            <div
+              class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded"
+            >
+              <h5>Summer Sale - Up to 50% Off</h5>
+              <p>Refresh your wardrobe with the hottest styles this summer.</p>
+            </div>
+          </div>
+          <div class="carousel-item item-image2">
+            <!-- <img
+              src="https://www.businesstoday.com.my/wp-content/uploads/2021/11/M6.jpg"
+              class="d-block w-100"
+              alt="Electronics"
+            /> -->
+            <div
+              class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded"
+            >
+              <h5>Latest Electronics</h5>
+              <p>
+                Grab cutting-edge gadgets and accessories at unbeatable prices.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item item-image3">
+            <!-- <img
+              src="https://www.tripzilla.ph/_ipx/q_80&s_2048x1216/https://static.tripzilla.ph/media/104799/conversions/lina-verovaya-VU7FzBEMDUo-unsplash-w768.webp"
+              class="d-block w-100"
+              alt="Home Essentials"
+            /> -->
+            <div
+              class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded"
+            >
+              <h5>Home Essentials</h5>
+              <p>
+                Make your house a home with our curated collection of
+                essentials.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#promoCarousel"
+          data-bs-slide="prev"
+          aria-label="Previous slide"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#promoCarousel"
+          data-bs-slide="next"
+          aria-label="Next slide"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Heading -->
+    <section class="container text-center my-5" id="heading">
+      <h2 class="fw-bold mb-4">Featured Products</h2>
+    </section>
+
+    <!-- Cards -->
+    <section class="container mb-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6ZzhBvttr7oQqgc4lPuygLL_Xy6YaXv_SGA&s"
+              class="card-img-top"
+              alt="Smart Watch"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Smart Watch</h5>
+              <p class="card-text flex-grow-1">
+                Stay connected and track your fitness with this sleek smart
+                watch.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-primary fw-bold">$199.99</span>
+                <a href="#" class="btn btn-sm btn-outline-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE7K8vBdnkqyd7qV4zSu-QOrKe38FIe9hnSQ&s"
+              class="card-img-top"
+              alt="Wireless Headphones"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Wireless Headphones</h5>
+              <p class="card-text flex-grow-1">
+                Experience immersive sound without the wires.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-primary fw-bold">$149.99</span>
+                <a href="#" class="btn btn-sm btn-outline-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://images-wp.stockx.com/news/wp-content/uploads/2022/08/blog-thumb-2.jpg"
+              class="card-img-top"
+              alt="Classic Sneakers"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Classic Sneakers</h5>
+              <p class="card-text flex-grow-1">
+                Timeless comfort and style for every occasion.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-primary fw-bold">$89.99</span>
+                <a href="#" class="btn btn-sm btn-outline-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4" id="footer">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <p class="mb-2 mb-md-0">&copy; 2024 ShopEase. All rights reserved.</p>
+        <div>
+          <a href="#" class="text-white me-3" aria-label="Facebook"
+            ><i class="bi bi-facebook"></i>Facebook</a
+          >
+          <a href="#" class="text-white me-3" aria-label="Twitter"
+            ><i class="bi bi-twitter"></i>Twitter</a
+          >
+          <a href="#" class="text-white" aria-label="Instagram"
+            ><i class="bi bi-instagram"></i>Instagram</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
